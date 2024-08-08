@@ -6,5 +6,3 @@ FLASK_ENV=development
 FLASK_APP=app
 SQLALCHEMY_DB_URI=sqlite:///toutou_api.db
 JWT_SECRET_KEY='Kis@rrw3b-1960'
-
-#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

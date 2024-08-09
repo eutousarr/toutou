@@ -6,7 +6,7 @@ from .resources import ns, bons, post_api
 def create_app():
     app = Flask(__name__)
     
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///toutou.sqlite3"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://eutousarr:GT1eUpdIcRwWAew3f5vbtWoApGeEUuat@dpg-cqr5lbbv2p9s73beo07g-a.oregon-postgres.render.com/toutou"
     CORS(app, resources={r"/api/*": {"origins": "*"}})
     # CORS(app,
     #      resources={r"/api/*": {"origins": ['http://192.168.50.16:5000', 'http://localhost:3000']}},

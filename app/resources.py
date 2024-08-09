@@ -9,7 +9,6 @@ ns = Namespace("api", __name__)
 class toutou(Resource):
     def get(self):
         return {"prenoms": "Fatou Diop Fall", "surnom": "Toutou", "nom": "SARR", "dateNaissance": "28 décembre 2023", "lieuNaissance": "Ziguinchor", "pere": "Ismaïla", "mere": "Adja Aïssatou AIDARA", "adresse": "Goumel, Ziguinchor"}
-    
 # @ns.route("/posts")
 # class PostListApi(Resource):
 #     @ns.marshal_list_with(post_model)
@@ -21,6 +20,7 @@ class UserListApi(Resource):
     @ns.marshal_list_with(user_model)
     def get(self):        
         return User.query.all()
+    
 
 
 post_api = Namespace("posts", description="POST operations")

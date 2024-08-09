@@ -52,7 +52,7 @@ class Post(db.Model):
     def __repr__(self) -> str:
         return 'Boomark>>> {self.url}'
 
-       
+      
 class Bon(db.Model):
     
     __tablename__ = 'bon'
